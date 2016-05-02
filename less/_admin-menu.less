@@ -1,0 +1,63 @@
+#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap {
+  background: @lightGrey;
+
+  .wp-has-current-submenu .wp-submenu .wp-submenu-head, 
+  .wp-menu-arrow, 
+  .wp-menu-arrow div, 
+  li.current a.menu-top, 
+  li.wp-has-current-submenu a.wp-has-current-submenu, 
+  li.current.menu-top, 
+  li.wp-has-current-submenu {
+    background: @grey;
+    color: @darkGrey;
+  }
+  .wp-has-current-submenu .wp-submenu, 
+  .wp-has-current-submenu .wp-submenu.sub-open, 
+  .wp-has-current-submenu.opensub .wp-submenu, 
+  a.wp-has-current-submenu:focus+.wp-submenu, 
+  .no-js li.wp-has-current-submenu:hover .wp-submenu {
+    background: #ddd;
+  }
+  .opensub .wp-submenu li.current a, 
+  .wp-submenu li.current, 
+  .wp-submenu li.current a, 
+  .wp-submenu li.current a:focus, 
+  .wp-submenu li.current a:hover, 
+  a.wp-has-current-submenu:focus+.wp-submenu li.current a {
+    color: @darkGrey;
+  }
+  .wp-submenu a {
+    color: fade(@darkGrey, 50%);
+  }
+  .awaiting-mod, 
+  .update-plugins {
+    background: @black;
+  }
+  .wp-submenu a:focus, 
+  .wp-submenu a:hover, 
+  a:hover, 
+  li.menu-top>a:focus {
+    color: @black;
+  }
+  a {
+    color: @darkGrey;
+  }
+  div.wp-menu-image:before {
+    color: @darkGrey;
+  }
+  li.menu-top:hover, 
+  li.opensub>a.menu-top, 
+  li>a.menu-top:focus {
+    background: @grey;
+    color: @black;
+  }
+  li a:focus div.wp-menu-image:before, 
+  li.opensub div.wp-menu-image:before, 
+  li:hover div.wp-menu-image:before {
+    color: @darkGrey;
+  }
+}
+ul#adminmenu a.wp-has-current-submenu:after, 
+ul#adminmenu>li.current>a.current:after {
+  border-right-color: @white;
+}

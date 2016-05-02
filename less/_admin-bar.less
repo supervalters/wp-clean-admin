@@ -1,0 +1,93 @@
+html {
+  background: @white;
+}
+#wpadminbar {
+  background: @lightGrey;
+  height: 40px;
+  font: 600 14px/40px @font;
+
+  * {
+    font: 600 14px/40px @font;
+  }
+  #wp-admin-bar-my-sites>.ab-item:before, 
+  #wp-admin-bar-site-name>.ab-item:before,
+  #wp-admin-bar-updates .ab-icon:before,
+  #wp-admin-bar-comments .ab-icon:before,
+  #wp-admin-bar-new-content .ab-icon:before,
+  #wp-admin-bar-languages .ab-icon:before {
+    top: 5px !important;
+  }
+  .ab-empty-item, 
+  a.ab-item, 
+  >#wp-toolbar span.ab-label, 
+  >#wp-toolbar span.noticon {
+    font-weight: 800;
+  }
+  .quicklinks .ab-empty-item, 
+  .quicklinks a, 
+  .shortlink-input {
+    height: 40px;
+  }
+  #wp-admin-bar-wp-logo {
+    display: none;
+  }
+  .menupop .ab-sub-wrapper, 
+  .shortlink-input {
+    box-shadow: none;
+  }
+  .ab-empty-item, 
+  a.ab-item, 
+  >#wp-toolbar span.ab-label, 
+  >#wp-toolbar span.noticon {
+    color: fade(@darkGrey, 70%);
+    font-weight: 500;
+  }
+  #adminbarsearch:before, 
+  .ab-icon:before, 
+  .ab-item:before {
+    color: @grey;
+  }
+  .ab-top-menu>li.hover>.ab-item, 
+  &.nojq .quicklinks .ab-top-menu>li>.ab-item:focus, 
+  &:not(.mobile) .ab-top-menu>li:hover>.ab-item, 
+  &:not(.mobile) .ab-top-menu>li>.ab-item:focus {
+    background: @grey;
+    color: @darkGrey;
+  }
+  &:not(.mobile)>#wp-toolbar a:focus span.ab-label, 
+  &:not(.mobile)>#wp-toolbar li:hover span.ab-label, 
+  >#wp-toolbar li.hover span.ab-label {
+    color: @darkGrey;
+  }
+  .quicklinks .ab-sub-wrapper .menupop.hover>a, 
+  .quicklinks .menupop ul li a:focus, 
+  .quicklinks .menupop ul li a:focus strong, 
+  .quicklinks .menupop ul li a:hover, 
+  .quicklinks .menupop ul li a:hover strong, 
+  .quicklinks .menupop.hover ul li a:focus, 
+  .quicklinks .menupop.hover ul li a:hover, 
+  li #adminbarsearch.adminbar-focused:before, 
+  li .ab-item:focus:before, 
+  li a:focus .ab-icon:before, 
+  li.hover .ab-icon:before, 
+  li.hover .ab-item:before, 
+  li:hover #adminbarsearch:before, 
+  li:hover .ab-icon:before, 
+  li:hover .ab-item:before, 
+  &.nojs .quicklinks .menupop:hover ul li a:focus, 
+  &.nojs .quicklinks .menupop:hover ul li a:hover {
+    color: @black;
+  }
+  .menupop .ab-sub-wrapper, 
+  .shortlink-input {
+    background: @lightGrey;
+    color: @darkGrey;
+  }
+  .ab-submenu .ab-item, 
+  .quicklinks .menupop ul li a, 
+  .quicklinks .menupop ul li a strong, 
+  .quicklinks .menupop.hover ul li a, 
+  &.nojs .quicklinks .menupop:hover ul li a {
+    color: @darkGrey;
+  }
+}
