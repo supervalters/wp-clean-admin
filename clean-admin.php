@@ -2,7 +2,7 @@
 
 /*
 Plugin Name: Clean Admin
-Plugin URI: https://valters.me
+Plugin URI: https://github.com/supervalters/wp-clean-admin
 Description: Clean admin for people with taste
 Author: Valters Grišāns
 Version: 1.0
